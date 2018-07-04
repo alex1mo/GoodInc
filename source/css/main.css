@@ -247,3 +247,23 @@ section>div {
     width: 18px;
     height: 18px;
 }
+
+.articles {
+    height: 380px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.articles1 {
+    background: white;
+    width: 300px;
+}
+
+.articles1 p:first-child {
+    font-family: Arial;
+    color:  #4f4f4f;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 31px;
+    text-align: left;
+}
