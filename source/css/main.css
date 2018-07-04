@@ -97,7 +97,6 @@
 }
 
 section {
-    height: calc(100vh - 135px);
     border: 1px solid black;
     width: 100%;
     background: #ececec;
@@ -147,4 +146,104 @@ section>div {
     line-height: 71px;
     text-align: left;
     text-shadow: 0px 1px 0px #ffffff;
+}
+
+
+.image {    
+    padding-bottom: 15px;
+    display: flex;
+}
+
+.image div:first-child{
+    height: 391px;
+    position: relative;
+}
+
+[src="img/Layer 4.png"] {
+    width: 631px;
+}
+
+.image-shadow {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color:  rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 1px 1px 0px #000000;
+    width: 371px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+}
+
+.image-shadow p {
+    padding-left: 24px;
+    font-family: Arial;
+    color:  #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.16px;
+    line-height: 71px;
+    text-align: left;
+}
+
+.description {
+    position: relative;
+    border: #f26c4f solid 0px;
+    border-left-width: 9px;
+    height: 391px;
+    background-color:  #373737;
+    box-shadow: 0px 1px 1px 0px #000000;
+}
+
+.description::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: solid 13px;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: #f26c4f;
+    border-bottom-color: transparent;
+    transform: translateY(45px);
+}
+
+.description1{
+    padding: 45px 86px 17px 46px; 
+    font-family: Arial;
+    color:  #ffffff;
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: -0.19px;
+    line-height: 24px;
+    text-align: left;
+}
+
+.description2{
+    height: 104px;
+    padding: 0px 45px 22px 46px;
+    font-family: Arial;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color:  #a7a7a7;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: left;
+}
+
+.description3{
+    padding-right: 48px;
+    font-family: Arial;
+    color:  #a7a7a7;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: right;
+}
+
+.description3 img {
+    transform: translateY(4px);
+    width: 18px;
+    height: 18px;
 }
